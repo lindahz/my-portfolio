@@ -1,3 +1,5 @@
+/* GENERAL */
+
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
@@ -12,6 +14,8 @@ body {
   margin: 0;
 }
 
+/* HEADER SECTION */
+
 header {
   height: 508px;
   background-color: red;
@@ -19,6 +23,7 @@ header {
   flex-direction: column;
   padding: 40px;
   padding-top: 100px;
+  border: 1px solid #707070;
 }
 
 .icon-container {
@@ -86,11 +91,37 @@ h2 {
   margin-left: auto;
 }
 
-
-
-
+/* PORTFOLIO GENERAL */
 
 .portfolio-section {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  opacity: 1;
+  background: #FFFFFF;
+  padding: 58px 36.5px;
+}
+
+.grey {
+  background-color: #F4F4F4;
+}
+
+/* SUMMARY SECTION */
+
+.text-summary {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.summary-red-line {
+  width: 45px;
+  height: 3px;
+  background: red;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.summary-red-dot {
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
 }
