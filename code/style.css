@@ -102,12 +102,24 @@ h2 {
   background-color: #F4F4F4;
 }
 
-/* SUMMARY SECTION */
+h3 {
+  margin: auto;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #FFFFFF;
+  background: red;
+  padding: 3px 6px;
+  text-align: center;
+}
 
-.text-summary {
+p {
   margin: 0;
   line-height: 1.6;
 }
+
+/* SUMMARY SECTION */
 
 .summary-red-line {
   width: 45px;
@@ -124,4 +136,26 @@ h2 {
   border-radius: 50%;
   display: inline-block;
   margin-right: 20px;
+}
+
+.text-tech {
+  text-align: center;
+}
+
+
+footer {
+  height: 270px;
+  padding: 60px;
+  background-color: #072BCE;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.footer-headline {
+  padding-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
