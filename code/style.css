@@ -21,14 +21,13 @@ header {
   background-color: red;
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  padding-top: 100px;
+  align-items: flex-end;
+  padding: 100px 36px 36px 36px;
   border: 1px solid #707070;
 }
 
 .icon-container {
   display: flex;
-  margin-left: auto;
 }
 
 .icon {
@@ -54,7 +53,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 0;
+  align-self: flex-start;
+  padding: 36px 0;
 }
 
 .text-name {
@@ -77,6 +77,7 @@ h1, h2 {
   text-align: left;
   color: #FFFFFF;
   margin: 0;
+  line-height: 1.2;
 }
 
 h2 {
@@ -88,14 +89,16 @@ h2 {
   height: 162px;
   border: 3px solid #FFFFFF;
   border-radius: 50%;
-  margin-left: auto;
 }
 
 /* PORTFOLIO GENERAL */
 
 .portfolio-section {
   background: #FFFFFF;
-  padding: 58px 36.5px;
+  padding: 58px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grey {
@@ -103,8 +106,8 @@ h2 {
 }
 
 h3 {
-  margin: auto;
-  margin-bottom: 30px;
+  display: inline-block;
+  margin: 0;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 22px;
@@ -112,6 +115,13 @@ h3 {
   background: red;
   padding: 3px 6px;
   text-align: center;
+}
+
+.red-title {
+  background: none;
+  color: red;
+  font-size: 21px;
+  padding-top: 60px;
 }
 
 p {
@@ -136,10 +146,95 @@ p {
   border-radius: 50%;
   display: inline-block;
   margin-right: 20px;
+  margin-left: -3px;
 }
 
 .text-tech {
   text-align: center;
+  padding-top: 36px;
+}
+
+/* PROJECT SECTION */
+
+.project-card-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.project-image {
+  background: #000000;
+  opacity: 0.38;
+  width: 303px;
+  height: 179px;
+  margin-bottom: 25px;
+}
+
+.project-image img {
+  width: 303px;
+  height: 179px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.project-image-title {
+  align-self: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FDDFE7;
+  position: absolute;
+  top: 116px;
+}
+
+.project-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.project-card-container p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-card-container span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: red;
+}
+
+.link-underline {
+  text-decoration: underline;
+}
+
+.project-tags {
+  font-size: 9px;
+  color: #2B2E34;
+  background-color: #FDDFE7;
+  margin-right: 4px;
+  padding: 2px 8px;
+}
+
+.project-tags-container {
+  display: flex;
+}
+
+/* MY THOUGHTS SECTION */
+
+.thoughts-title-desktop {
+  /* display only for desktop */
+  display: none;
+}
+
+/* FOR MORE SECTION */
+
+.red-border {
+  border: 3px solid red;
+  width: 58px;
+  height: 58px;
 }
 
 
@@ -152,7 +247,7 @@ footer {
   text-align: center;
 }
 
-.footer-headline {
+.footer-title {
   padding-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 21px;
