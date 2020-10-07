@@ -24,7 +24,32 @@ p {
   line-height: 1.6;
 }
 
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+  html {
+    font-size: 30px;
+  }
+
+}
+
 /* HEADER SECTION */
+
+header {
+  height: 508px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 100px 36px 36px 36px;
+  border: 1px solid #707070;
+  position: relative;
+}
 
 .header-img {
   position: absolute;
@@ -35,16 +60,6 @@ p {
   top: 0;
   left: 0;
   opacity: 0.7;
-}
-
-header {
-  height: 508px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 100px 36px 36px 36px;
-  border: 1px solid #707070;
-  position: relative;
 }
 
 .icon-container {
@@ -78,6 +93,13 @@ header {
   padding: 36px 0;
 }
 
+.text-container-name {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
 .text-name {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -90,7 +112,6 @@ header {
 
 .bold {
   font-weight: 500;
-  padding-right: 30px;
 }
 
 h1, h2 {
@@ -110,6 +131,67 @@ h2 {
   height: 162px;
   border: 3px solid #FFFFFF;
   border-radius: 50%;
+}
+
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+
+  header {
+    height: 640px;
+    border: none;
+    padding-top: 108px;
+    padding-bottom: 112px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .header-img {
+    height: 640px;
+  }
+
+  .icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  .icon-border {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .text-container {
+    width: 60%;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .text-container-name {
+    width: 60%;
+  }
+
+  .text-name {
+    font-size: 28px;
+  }
+
+  h1 {
+      font-size: 80px;
+    }
+  
+  h2 {
+      font-size: 45px;
+  }
+
+  .profile-picture {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 360px;
+  }
 }
 
 /* PORTFOLIO GENERAL */
@@ -134,14 +216,14 @@ h3 {
   text-transform: uppercase;
   font-size: 22px;
   color: #FFFFFF;
-  background: red;
+  background: #931a25;
   padding: 3px 6px;
   text-align: center;
 }
 
 .red-title {
   background: none;
-  color: red;
+  color: #931a25;
   font-size: 21px;
   padding-top: 60px;
 }
@@ -149,8 +231,43 @@ h3 {
 .portfolio-section span {
   font-weight: bold;
   text-transform: uppercase;
-  color: red;
+  color: #931a25;
   line-height: 1.6;
+}
+
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+  .portfolio-section {
+    padding: 58px 100px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  .red-title {
+    font-size: 32px;
+    padding-top: 80px;
+  }
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+
+  .portfolio-section {
+    padding: 80px 15%;
+    
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  .red-title {
+    font-size: 38px;
+    padding-top: 100px;
+  }
 }
 
 /* SUMMARY SECTION */
@@ -158,7 +275,7 @@ h3 {
 .summary-red-line {
   width: 45px;
   height: 3px;
-  background: red;
+  background:  #931a25;
   display: inline-block;
   margin-bottom: 4px;
 }
@@ -166,7 +283,7 @@ h3 {
 .summary-red-dot {
   width: 12px;
   height: 12px;
-  background: red;
+  background:  #931a25;
   border-radius: 50%;
   display: inline-block;
   margin-right: 20px;
@@ -176,6 +293,36 @@ h3 {
 .text-tech {
   text-align: center;
   padding-top: 36px;
+}
+
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+  .summary-red-line {
+    width: 80px;
+    height: 4px;
+    margin-bottom: 6px;
+  }
+
+  .summary-red-dot {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+
+  .summary-red-line {
+    width: 97px;
+    height: 5px;
+    margin-bottom: 8px;
+  }
+
+  .summary-red-dot {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 /* PROJECT SECTION */
@@ -207,7 +354,7 @@ h3 {
   align-self: center;
   font-weight: bold;
   text-transform: uppercase;
-  color: #FDDFE7;
+  color: #ffcb8e;
   position: absolute;
   top: 76px;
   z-index: 1;
@@ -227,7 +374,7 @@ h3 {
 .project-tags {
   font-size: 9px;
   color: #2B2E34;
-  background-color: #FDDFE7;
+  background-color: #ffcb8e;
   margin-right: 4px;
   padding: 2px 8px;
 }
@@ -261,7 +408,7 @@ h3 {
 }
 
 .thoughts-date {
-  color: red;
+  color: #931a25;
   text-transform: uppercase;
 }
 
@@ -301,7 +448,7 @@ span.date {
 .skills-title {
   font-weight: bold;
   text-transform: uppercase;
-  color: red;
+  color: #931a25;
 }
 
 .extra-padding {
@@ -324,7 +471,7 @@ span.date {
 }
 
 .red-border {
-  border: 3px solid red;
+  border: 3px solid #931a25;
   width: 58px;
   height: 58px;
 }
@@ -333,7 +480,7 @@ span.date {
   font-size: 10px;
   text-transform: uppercase;
   font-weight: bold;
-  color: red;
+  color:  #931a25;
   padding-top: 10px;
 }
   
@@ -342,7 +489,7 @@ span.date {
 footer {
   height: 270px;
   padding: 60px;
-  background-color: #072BCE;
+  background-color: #e97171;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   text-align: center;
