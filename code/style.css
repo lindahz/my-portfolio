@@ -118,7 +118,7 @@ h2 {
 h3 {
   display: inline-block;
   margin: 0;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 22px;
   color: #FFFFFF;
@@ -138,6 +138,7 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
   color: red;
+  line-height: 1.6;
 }
 
 /* SUMMARY SECTION */
@@ -250,7 +251,6 @@ h3 {
 .thoughts-date {
   color: red;
   text-transform: uppercase;
-  font-weight: normal;
 }
 
 .thoughts-title {
@@ -266,6 +266,34 @@ h3 {
 
 span.date {
   font-weight: normal;
+}
+
+/* SKILLS SECTION */
+
+.skills-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-text-container {
+  text-align: center;
+  width: 50%;
+}
+
+.skills-text-container p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.skills-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: red;
+}
+
+.extra-padding {
+  padding-top: 30px;
 }
 
 /* FOR MORE SECTION */
