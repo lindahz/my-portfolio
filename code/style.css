@@ -603,7 +603,7 @@ span.date {
   }
 
   .more-thoughts-text {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -661,6 +661,45 @@ span.date {
 
 .extra-padding {
   padding-top: 30px;
+}
+
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+  .skills-container {
+    padding-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+
+  .skills-container p {
+    line-height: 1.8;
+  }
+
+  .extra-padding {
+    padding-top: 30px;
+  }
+
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+
+  .skills-container {
+    padding-top: 55px;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 25px;
+  }
+
+  .skills-container p {
+    line-height: 1.8;
+  }
+
+  .extra-padding {
+    padding-top: 40px;
+  }
 }
 
 /* FOR MORE SECTION */
