@@ -36,7 +36,6 @@ p {
   html {
     font-size: 30px;
   }
-
 }
 
 /* HEADER SECTION */
@@ -135,6 +134,59 @@ h2 {
 
 /* For tablet only */
 @media screen and (min-width: 667px) and (max-width: 1024px) {
+
+  header {
+    height: 500px;
+    border: none;
+    padding-top: 85px;
+    padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .header-img {
+    height: 500px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-border {
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+  }
+
+  .text-container {
+    width: 70%;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .text-container-name {
+    width: 50%;
+  }
+
+  .text-name {
+    font-size: 22px;
+  }
+
+  h1 {
+      font-size: 66px;
+    }
+  
+  h2 {
+      font-size: 32px;
+  }
+
+  .profile-picture {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 300px;
+  }
 }
 
 /* For computer only */
@@ -219,6 +271,7 @@ h3 {
   background: #931a25;
   padding: 3px 6px;
   text-align: center;
+  margin: auto;
 }
 
 .red-title {
@@ -226,6 +279,7 @@ h3 {
   color: #931a25;
   font-size: 21px;
   padding-top: 60px;
+  margin: auto;
 }
 
 .portfolio-section span {
@@ -239,15 +293,15 @@ h3 {
 @media screen and (min-width: 667px) and (max-width: 1024px) {
 
   .portfolio-section {
-    padding: 58px 100px;
+    padding: 65px 10%;
   }
 
   h3 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .red-title {
-    font-size: 32px;
+    font-size: 38px;
     padding-top: 80px;
   }
 }
@@ -257,7 +311,6 @@ h3 {
 
   .portfolio-section {
     padding: 80px 15%;
-    
   }
 
   h3 {
@@ -381,6 +434,96 @@ h3 {
 
 .project-tags-container {
   display: flex;
+}
+
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+  .wrap-bigscreen {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .project-card-container {
+    width: 47%;
+    font-size: 22px;
+    padding-top: 50px;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-image-title {
+    top: 85px;
+    font-size: 24px;
+  }
+
+  .project-tags {
+    font-size: 12px;
+  }
+
+  .cards-desktop {
+    width: 100%;
+  }
+
+  .text-desktop {
+    text-decoration: underline;
+  }
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+
+  .wrap-bigscreen {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .project-card-container {
+    width: 47%;
+    font-size: 25px;
+    padding-top: 50px;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 265px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 265px;
+  }
+
+  .project-image-title {
+    top: 110px;
+    font-size: 28px;
+  }
+
+  .project-tags {
+    font-size: 14px;
+  }
+
+  .cards-desktop {
+    width: 100%;
+  }
+
+  .text-desktop {
+    text-decoration: underline;
+  }
 }
 
 /* MY THOUGHTS SECTION */
