@@ -280,6 +280,7 @@ h3 {
   font-size: 21px;
   padding-top: 60px;
   margin: auto;
+  width: 100%;
 }
 
 .portfolio-section span {
@@ -297,11 +298,11 @@ h3 {
   }
 
   h3 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .red-title {
-    font-size: 38px;
+    font-size: 32px;
     padding-top: 80px;
   }
 }
@@ -314,16 +315,16 @@ h3 {
   }
 
   h3 {
-    font-size: 48px;
+    font-size: 46px;
   }
 
   .red-title {
-    font-size: 38px;
+    font-size: 36px;
     padding-top: 100px;
   }
 }
 
-/* SUMMARY SECTION */
+/* SUMMARY AND TECH SECTION */
 
 .summary-red-line {
   width: 45px;
@@ -361,6 +362,10 @@ h3 {
     width: 18px;
     height: 18px;
   }
+
+  .text-tech {
+    padding-top: 40px;
+  }
 }
 
 /* For computer only */
@@ -375,6 +380,10 @@ h3 {
   .summary-red-dot {
     width: 23px;
     height: 23px;
+  }
+
+  .text-tech {
+    padding-top: 55px;
   }
 }
 
@@ -495,7 +504,7 @@ h3 {
   .project-card-container {
     width: 47%;
     font-size: 25px;
-    padding-top: 50px;
+    padding-top: 55px;
   }
 
   .project-image img {
@@ -526,7 +535,7 @@ h3 {
   }
 }
 
-/* MY THOUGHTS SECTION */
+/* THOUGHTS SECTION */
 
 .thoughts-title-desktop {
   /* display only for desktop */
@@ -568,6 +577,62 @@ h3 {
 
 span.date {
   font-weight: normal;
+}
+
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+  span.thoughts-title-desktop {
+    display: inline-block;
+    color: #FFFFFF;
+  }
+  
+  .thoughts-card-container {
+    width: 47%;
+    font-size: 22px;
+    padding-top: 50px;
+  }
+
+  .thoughts-card-container img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .thoughts-title {
+    font-size: 26px;
+  }
+
+  .more-thoughts-text {
+    font-size: 20px;
+  }
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+
+  span.thoughts-title-desktop {
+    display: inline-block;
+    color: #FFFFFF;
+  }
+  
+  .thoughts-card-container {
+    width: 47%;
+    font-size: 25px;
+    padding-top: 55px;
+  }
+
+  .thoughts-card-container img {
+    width: 100%;
+    height: 265px;
+  }
+
+  .thoughts-title {
+    font-size: 30px;
+  }
+
+  .more-thoughts-text {
+    font-size: 25px;
+  }
 }
 
 /* SKILLS SECTION */
