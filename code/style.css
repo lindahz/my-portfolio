@@ -680,7 +680,6 @@ span.date {
   .extra-padding {
     padding-top: 30px;
   }
-
 }
 
 /* For computer only */
@@ -729,6 +728,54 @@ span.date {
   font-weight: bold;
   color:  #931a25;
   padding-top: 10px;
+}
+
+/* For tablet only */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+  .more-container{
+    padding-top: 50px;
+    width: 70%;
+  }
+
+  .icon-big {
+    width: 50px;
+    height: 50px;
+  }
+
+  .red-border {
+    width: 120px;
+    height: 120px;
+  }
+
+  .more-text {
+    font-size: 22px;
+    padding-top: 15px;
+  }
+}
+
+/* For computer only */
+@media (min-width: 1025px) {
+
+  .more-container{
+    padding-top: 55px;
+    width: 60%;
+  }
+
+  .icon-big {
+    width: 60px;
+    height: 60px;
+  }
+
+  .red-border {
+    width: 140px;
+    height: 140px;
+  }
+
+  .more-text {
+    font-size: 25px;
+    padding-top: 20px;
+  }
 }
   
 /* FOOTER SECTION */
