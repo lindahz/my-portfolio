@@ -196,8 +196,8 @@ h2 {
     border: none;
     padding-top: 108px;
     padding-bottom: 112px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 18%;
+    padding-right: 18%;
   }
 
   .header-img {
@@ -215,13 +215,13 @@ h2 {
   }
 
   .text-container {
-    width: 60%;
+    width: 500px;
     padding: 0;
     z-index: 2;
   }
 
   .text-container-name {
-    width: 60%;
+    width: 80%;
   }
 
   .text-name {
@@ -271,6 +271,11 @@ h3 {
   margin: auto;
 }
 
+.fullwidth-title {
+  width: 100%;
+  display: flex;
+}
+
 .red-title {
   background: none;
   color: #931a25;
@@ -308,7 +313,7 @@ h3 {
 @media (min-width: 1025px) {
 
   .portfolio-section {
-    padding: 80px 15%;
+    padding: 80px 18%;
   }
 
   h3 {
@@ -319,6 +324,7 @@ h3 {
     font-size: 36px;
     padding-top: 100px;
   }
+
 }
 
 /* SUMMARY AND TECH SECTION */
@@ -482,7 +488,7 @@ h3 {
     width: 100%;
   }
 
-  .text-desktop {
+  .more-thoughts-text {
     text-decoration: underline;
   }
 }
@@ -527,8 +533,14 @@ h3 {
     width: 100%;
   }
 
-  .text-desktop {
+  .more-thoughts-text {
     text-decoration: underline;
+  }
+
+  .thoughts-container-computer {
+    display: flex;
+    flex-direction: column;
+
   }
 }
 
@@ -781,6 +793,9 @@ footer {
   height: 270px;
   padding: 60px;
   background-color: #da2d2d;
+}
+
+footer p {
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   text-align: center;
