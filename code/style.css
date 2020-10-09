@@ -67,7 +67,6 @@ header {
 
 .icon {
   width: 19px;
-  height: 19px;
   margin: 0;
 }
 
@@ -152,7 +151,6 @@ h2 {
 
   .icon {
     width: 30px;
-    height: 30px;
   }
 
   .icon-border {
@@ -208,7 +206,6 @@ h2 {
 
   .icon {
     width: 39px;
-    height: 39px;
   }
 
   .icon-border {
@@ -764,7 +761,7 @@ span.date {
 
   .icon-big {
     width: 60px;
-    height: 60px;
+    margin: 0;
   }
 
   .red-border {
@@ -783,7 +780,7 @@ span.date {
 footer {
   height: 270px;
   padding: 60px;
-  background-color: #e97171;
+  background-color: #da2d2d;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   text-align: center;
