@@ -79,7 +79,7 @@ header {
   width: 39px;
   height: 39px;
   margin: 3px;
-  border: 3px solid #DD9561;
+  border: 3px solid #000000;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -89,7 +89,7 @@ header {
 }
 
 .icon-border:hover {
-  background-color: rgba(221, 149, 97, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .text-container {
@@ -111,7 +111,7 @@ header {
 .text-name {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #000000;
   text-transform: uppercase;
   font-weight: 300;
   margin: 0;
@@ -125,7 +125,7 @@ header {
 h1, h2 {
   font-size: 40px;
   text-align: left;
-  color: #FFFFFF;
+  color: #000000;
   margin: 0;
   line-height: 1.2;
 }
@@ -137,7 +137,7 @@ h2 {
 .profile-picture {
   width: 162px;
   height: 162px;
-  border: 3px solid #DD9561;
+  border: 3px solid #000000;
   border-radius: 50%;
   position: absolute;
   top: 358px;
@@ -728,7 +728,7 @@ span.date {
 }
 
 .red-border:hover {
-  background-color: #fef3f4;
+  background-color: rgb(147, 26, 37, 0.2)
 }
 
 .more-text {
