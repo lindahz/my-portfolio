@@ -405,18 +405,14 @@ h3 {
 }
 
 .project-image {
-  max-width: 100%;
-  height: auto;
   margin-bottom: 25px;
-  display: flex;
-  justify-content: center;
   position: relative;
 }
 
 .project-image img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0.6;
 }
 
@@ -426,6 +422,8 @@ h3 {
   text-transform: uppercase;
   color: #ffcb8e;
   position: absolute;
+  text-align: center;
+  width: 100%;
   top: 46%;
   z-index: 1;
 }
@@ -525,8 +523,8 @@ h3 {
 }
 
 .thoughts-card-container img {
-  width: 100%;
-  height: 205px;
+  max-width: 100%;
+  height: auto;
   border: 1px solid #707070;
   object-fit: cover;
   margin-bottom: 25px;
@@ -578,11 +576,6 @@ span.date {
     padding-top: 50px;
   }
 
-  .thoughts-card-container img {
-    max-width: 100%;
-    height: auto;
-  }
-
   .thoughts-title {
     font-size: 26px;
   }
@@ -605,11 +598,6 @@ span.date {
     width: 47%;
     font-size: 25px;
     padding-top: 55px;
-  }
-
-  .thoughts-card-container img {
-    max-width: 100%;
-    height: auto;
   }
 
   .thoughts-title {
