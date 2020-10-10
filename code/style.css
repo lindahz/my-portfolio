@@ -79,12 +79,17 @@ header {
   width: 39px;
   height: 39px;
   margin: 3px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #DD9561;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-border:hover {
+  background-color: rgba(221, 149, 97, 0.3);
 }
 
 .text-container {
@@ -132,7 +137,7 @@ h2 {
 .profile-picture {
   width: 162px;
   height: 162px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #DD9561;
   border-radius: 50%;
   position: absolute;
   top: 358px;
@@ -356,6 +361,11 @@ h3 {
   padding-top: 36px;
 }
 
+.text-tech span {
+  font-weight: normal;
+  text-transform: initial;
+}
+
 /* For tablet only */
 @media screen and (min-width: 667px) and (max-width: 1024px) {
 
@@ -414,6 +424,11 @@ h3 {
   height: auto;
   object-fit: contain;
   opacity: 0.6;
+  transition: 0.3s;
+}
+
+.project-image img:hover {
+  opacity: 1;
 }
 
 .project-image-title {
@@ -424,7 +439,7 @@ h3 {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 46%;
+  top: 43%;
   z-index: 1;
 }
 
@@ -469,7 +484,7 @@ h3 {
   }
 
   .project-image-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .project-tags {
@@ -508,7 +523,13 @@ h3 {
 
   .cards-desktop {
     width: 100%;
+    transition: 0.3s;
   }
+
+  .cards-desktop:hover {
+    font-size: 90%;
+  }
+
 }
 
 /* THOUGHTS SECTION */
@@ -564,11 +585,6 @@ span.date {
 
 /* For tablet only */
 @media screen and (min-width: 667px) and (max-width: 1024px) {
-
-  span.thoughts-title-desktop {
-    display: inline-block;
-    color: #FFFFFF;
-  }
   
   .thoughts-card-container {
     width: 47%;
@@ -584,6 +600,10 @@ span.date {
     font-size: 22px;
     text-decoration: underline;
   }
+
+  .more-thoughts-text span {
+    text-decoration: underline;
+   }
 }
 
 /* For computer only */
@@ -607,6 +627,15 @@ span.date {
   .more-thoughts-text {
     font-size: 25px;
     text-decoration: underline;
+    transition: 0.3s;
+  }
+
+   .more-thoughts-text span {
+    text-decoration: underline;
+   }
+
+  .more-thoughts-text:hover {
+    font-size: 90%;
   }
 }
 
@@ -695,6 +724,11 @@ span.date {
   border: 3px solid #931a25;
   width: 58px;
   height: 58px;
+  transition: 0.3s;
+}
+
+.red-border:hover {
+  background-color: #fef3f4;
 }
 
 .more-text {
