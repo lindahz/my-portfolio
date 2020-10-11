@@ -417,25 +417,33 @@ h3 {
 .project-image {
   margin-bottom: 25px;
   position: relative;
+  max-width: 100%;
+  height: auto;
+  color: #ffcb8e;
+  box-shadow: 5px 5px 15px -10px rgba(0,0,0,0.61);
+  transition: 0.5s ease;
 }
 
 .project-image img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  opacity: 0.6;
-  transition: 0.3s;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.project-image img:hover {
-  opacity: 1;
+.project-image-overlay {
+  position: absolute;
+  bottom: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease;
 }
 
 .project-image-title {
   align-self: center;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ffcb8e;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -443,11 +451,23 @@ h3 {
   z-index: 1;
 }
 
+.project-image:hover {
+  color: transparent;
+}
+
+.project-image-overlay:hover {
+  background-color: transparent;
+}
+
 .project-text-container {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 20px;
   font-family: 'Roboto', sans-serif;
+}
+
+.project-text-container:hover {
+  text-decoration: underline;
 }
 
 .link-underline {
@@ -464,6 +484,10 @@ h3 {
 
 .project-tags-container {
   display: flex;
+}
+
+.cards-desktop {
+  width: 100%;
 }
 
 /* For tablet only */
@@ -489,10 +513,6 @@ h3 {
 
   .project-tags {
     font-size: 12px;
-  }
-
-  .cards-desktop {
-    width: 100%;
   }
 }
 
@@ -520,16 +540,6 @@ h3 {
   .project-tags {
     font-size: 14px;
   }
-
-  .cards-desktop {
-    width: 100%;
-    transition: 0.3s;
-  }
-
-  .cards-desktop:hover {
-    font-size: 90%;
-  }
-
 }
 
 /* THOUGHTS SECTION */
@@ -633,10 +643,6 @@ span.date {
    .more-thoughts-text span {
     text-decoration: underline;
    }
-
-  .more-thoughts-text:hover {
-    font-size: 90%;
-  }
 }
 
 /* SKILLS SECTION */
